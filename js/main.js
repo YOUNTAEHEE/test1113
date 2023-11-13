@@ -4,7 +4,7 @@ const colors = section.querySelectorAll('li');
 
 colors.forEach((color, index) => {
 	colors[index].addEventListener('click', () => {
-		if (colors[index].classList.contains('on')) return;
+		if (colors[index].classList.contains('on')) return; //미션4
 
 		activation(colors, index);
 		bg(colors, index);
@@ -12,7 +12,7 @@ colors.forEach((color, index) => {
 });
 
 function activation(arr, idx) {
-	console.log(arr);
+	console.log('activation');
 	arr.forEach((el) => {
 		el.classList.remove('on');
 	});
